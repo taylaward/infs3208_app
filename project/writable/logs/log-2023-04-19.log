@@ -1,0 +1,154 @@
+CRITICAL - 2023-04-19 00:17:06 --> Undefined variable $password
+in APPPATH/Controllers/Login.php on line 48.
+ 1 APPPATH/Controllers/Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 01:29:27 --> Class "App\Controllers\Email" not found
+in APPPATH/Controllers/Login.php on line 75.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->getCode()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:12:52 --> Undefined variable $email
+in APPPATH/Controllers/Login.php on line 77.
+ 1 APPPATH/Controllers/Login.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->getCode()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:14:00 --> Too few arguments to function App\Controllers\Login::checkCode(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Login.php on line 114.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->checkCode()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:17:38 --> Undefined variable $data
+in APPPATH/Controllers/Login.php on line 99.
+ 1 APPPATH/Controllers/Login.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->getCode()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:31:25 --> Undefined variable $error
+in APPPATH/Views/forgotPasswordInput.php on line 6.
+ 1 APPPATH/Views/forgotPasswordInput.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/forgotPasswordInput.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(123): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->checkCode()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:52:18 --> Call to undefined function App\Controllers\hash_password()
+in APPPATH/Controllers/MyProfile.php on line 177.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->changePassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:52:51 --> password_hash() expects at least 2 arguments, 1 given
+in APPPATH/Controllers/MyProfile.php on line 177.
+ 1 APPPATH/Controllers/MyProfile.php(177): password_hash()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->changePassword()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 06:25:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH/Models/Email_Model.php on line 36.
+ 1 APPPATH/Controllers/SignUp.php(87): App\Models\Email_Model->getToken()
+ 2 APPPATH/Controllers/SignUp.php(71): App\Controllers\SignUp->verifyEmail()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SignUp->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 06:27:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH/Models/Email_Model.php on line 37.
+ 1 APPPATH/Controllers/SignUp.php(87): App\Models\Email_Model->getToken()
+ 2 APPPATH/Controllers/SignUp.php(71): App\Controllers\SignUp->verifyEmail()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SignUp->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 06:28:25 --> Class "App\Controllers\Email" not found
+in APPPATH/Controllers/SignUp.php on line 88.
+ 1 APPPATH/Controllers/SignUp.php(71): App\Controllers\SignUp->verifyEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SignUp->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 06:29:36 --> Too few arguments to function App\Controllers\SignUp::confirmEmail(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH/Controllers/SignUp.php on line 111.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SignUp->confirmEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 06:30:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-19 06:30:37 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Wed, 19 Apr 2023 16:30:31 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-32976b81.zones.eait.uq.edu.au [172.23.80.162], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <infs3202-32976b81@uqcloud.net>... Sender ok
+
+to: 250 2.1.5 <ardepy@outlook.com>... Recipient ok
+
+data: 354 Enter mail, end with "." on a line by itself
+
+
+quit: 250 2.0.0 33J6UVIj015906 Message accepted for delivery
+
+The following SMTP error was encountered: 250 2.0.0 33J6UVIj015906 Message accepted for delivery
+
+The following SMTP error was encountered: 
+CRITICAL - 2023-04-19 06:30:47 --> Too few arguments to function App\Controllers\SignUp::confirmEmail(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH/Controllers/SignUp.php on line 111.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SignUp->confirmEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 06:34:27 --> Too few arguments to function App\Controllers\SignUp::confirmEmail(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/SignUp.php on line 111.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SignUp->confirmEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 07:38:02 --> Attempt to read property "validation" on string
+in APPPATH/Models/Email_Model.php on line 26.
+ 1 APPPATH/Models/Email_Model.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(18): App\Models\Email_Model->isValid()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 07:38:29 --> Undefined property: stdClass::$validation
+in APPPATH/Models/Email_Model.php on line 26.
+ 1 APPPATH/Models/Email_Model.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(18): App\Models\Email_Model->isValid()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 07:38:30 --> Undefined property: stdClass::$validation
+in APPPATH/Models/Email_Model.php on line 26.
+ 1 APPPATH/Models/Email_Model.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(18): App\Models\Email_Model->isValid()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 07:52:06 --> Too few arguments to function App\Controllers\SignUp::verifyEmail(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/SignUp.php on line 86.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SignUp->verifyEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

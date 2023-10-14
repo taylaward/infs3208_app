@@ -1,0 +1,228 @@
+CRITICAL - 2023-04-15 01:57:17 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/MyProfile.php(85): CodeIgniter\Images\Handlers\GDHandler->save()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 01:58:15 --> unlink(/var/www/htdocs/project/writable/pfp/1681282138_66346e4865763d5866a6.jpg): No such file or directory
+in APPPATH/Controllers/MyProfile.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(80): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 01:59:07 --> unlink(/var/www/htdocs/project/writable/pfp/1681282138_66346e4865763d5866a6.jpg): No such file or directory
+in APPPATH/Controllers/MyProfile.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(80): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 02:00:13 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/MyProfile.php(87): CodeIgniter\Images\Handlers\GDHandler->save()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 02:09:03 --> unlink(/project/writable/pfp/1681524254_ed51f8aebcb0c07fa511.jpg): No such file or directory
+in APPPATH/Controllers/MyProfile.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(80): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:00:19 --> Undefined variable $post_data
+in APPPATH/Views/myprofile.php on line 54.
+ 1 APPPATH/Views/myprofile.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/myprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MyProfile.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:00:44 --> Undefined variable $post_data
+in APPPATH/Views/myprofile.php on line 54.
+ 1 APPPATH/Views/myprofile.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/myprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MyProfile.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:00:45 --> Undefined variable $post_data
+in APPPATH/Views/myprofile.php on line 54.
+ 1 APPPATH/Views/myprofile.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/myprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MyProfile.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:00:46 --> Undefined variable $post_data
+in APPPATH/Views/myprofile.php on line 54.
+ 1 APPPATH/Views/myprofile.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/myprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MyProfile.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:01:28 --> Undefined variable $post_data
+in APPPATH/Views/myprofile.php on line 54.
+ 1 APPPATH/Views/myprofile.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/myprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MyProfile.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:01:28 --> Undefined variable $post_data
+in APPPATH/Views/myprofile.php on line 54.
+ 1 APPPATH/Views/myprofile.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/myprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MyProfile.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:01:40 --> Undefined variable $post_data
+in APPPATH/Views/myprofile.php on line 54.
+ 1 APPPATH/Views/myprofile.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/myprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MyProfile.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:01:41 --> Undefined variable $post_data
+in APPPATH/Views/myprofile.php on line 54.
+ 1 APPPATH/Views/myprofile.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/myprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MyProfile.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:03:21 --> Undefined array key 0
+in APPPATH/Models/User_model.php on line 53.
+ 1 APPPATH/Models/User_model.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(35): App\Models\User_model->getUserData()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:03:22 --> Undefined array key 0
+in APPPATH/Models/User_model.php on line 53.
+ 1 APPPATH/Models/User_model.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(35): App\Models\User_model->getUserData()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:03:59 --> Undefined array key 0
+in APPPATH/Models/User_model.php on line 53.
+ 1 APPPATH/Models/User_model.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(35): App\Models\User_model->getUserData()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 03:04:00 --> Undefined array key 0
+in APPPATH/Models/User_model.php on line 53.
+ 1 APPPATH/Models/User_model.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(35): App\Models\User_model->getUserData()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 06:03:13 --> Undefined variable $session
+in APPPATH/Controllers/MyProfile.php on line 151.
+ 1 APPPATH/Controllers/MyProfile.php(151): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->check_passwordChange()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 06:04:41 --> Undefined variable $profile
+in APPPATH/Views/myprofile.php on line 50.
+ 1 APPPATH/Views/myprofile.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/myprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MyProfile.php(161): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->check_passwordChange()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 06:15:21 --> Undefined array key 0
+in APPPATH/Models/User_model.php on line 53.
+ 1 APPPATH/Models/User_model.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(115): App\Models\User_model->getUserData()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 06:27:53 --> File not found: ""
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Controllers/MyProfile.php(90): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 06:32:21 --> unlink(/var/www/htdocs/project/writable/pfp/1681539321_b4210fe0884c77140fe8.jpg): No such file or directory
+in APPPATH/Controllers/MyProfile.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(84): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 06:35:04 --> Undefined array key 0
+in APPPATH/Models/User_model.php on line 53.
+ 1 APPPATH/Models/User_model.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(120): App\Models\User_model->getUserData()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 06:37:56 --> Undefined variable $query
+in APPPATH/Models/User_model.php on line 54.
+ 1 APPPATH/Models/User_model.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MyProfile.php(32): App\Models\User_model->getUserData()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 06:38:18 --> File not found: ""
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Controllers/MyProfile.php(87): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MyProfile->updateProfile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
