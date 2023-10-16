@@ -12,12 +12,12 @@ RUN apt-get update \
         && ln -fs /usr/share/zoneinfo/${timezone}/${city} /etc/localtime \
         && DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata \
         && dpkg-reconfigure --frontend noninteractive tzdata \
-        && apt-get update && \
+        && apt-get update \
 	&& apt-get install --no-install-recommends \
                 --no-install-suggests -qq \
                 -y wget gnupg2 ca-certificates \
         && apt-get install software-properties-common -y --no-install-recommends \
-#Install Nginx, PHP, PHP-FPM
+#Install Nginx, PHP, PHP-FPM 
         && add-apt-repository ppa:ondrej/php -y \
         && apt-get update \
         && apt-get install -y --no-install-recommends nginx php${PHPVER}-fpm
