@@ -26,7 +26,7 @@ COPY ./nginx.ini /etc/nginx/sites-available/default
 
 WORKDIR /var/www/htdocs
                                                             
-COPY ./project ./
+COPY ./project/* ./project/
 
 EXPOSE 80
 
