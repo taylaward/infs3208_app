@@ -22,7 +22,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 use Config\Exceptions as ExceptionsConfig;
 use Config\Paths;
 use ErrorException;
-use Psr\Log\LogLevel;
+
 use Throwable;
 
 /**
@@ -86,10 +86,6 @@ class Exceptions
         // @TODO remove this after dropping PHP 8.1 support.
         if (! isset($this->config->sensitiveDataInTrace)) {
             $this->config->sensitiveDataInTrace = [];
-        }
-        if (! isset($this->config->logDeprecations, $this->config->deprecationLogLevel)) {
-            $this->config->logDeprecations     = false;
-            $this->config->deprecationLogLevel = LogLevel::WARNING;
         }
     }
 
@@ -357,28 +353,6 @@ class Exceptions
         $deprecations = E_DEPRECATED | E_USER_DEPRECATED;
 
         return ($error & $deprecations) !== 0;
-    }
-
-    /**
-     * @return true
-     */
-    private function handleDeprecationError(string $message, ?string $file = null, ?int $line = null): bool
-    {
-        // Remove the trace of the error handler.
-        $trace = array_slice(debug_backtrace(), 2);
-
-        log_message(
-            $this->config->deprecationLogLevel,
-            "[DEPRECATED] {message} in {errFile} on line {errLine}.\n{trace}",
-            [
-                'message' => $message,
-                'errFile' => clean_path($file ?? ''),
-                'errLine' => $line ?? 0,
-                'trace'   => self::renderBacktrace($trace),
-            ]
-        );
-
-        return true;
     }
 
     // --------------------------------------------------------------------
