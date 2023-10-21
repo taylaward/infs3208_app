@@ -14,7 +14,9 @@ RUN apt-get update \
         && apt-get update \
         && docker-php-ext-install pdo_mysql
 
+
 WORKDIR /var/www/htdocs/project
+RUN chmod -R 777 /var/www/htdocs/project
 # Install Composer
 RUN php installer -- --install-dir=/usr/local/bin --filename=composer
 
@@ -23,7 +25,7 @@ RUN composer dump-autoload --optimize && composer run-script post-install-cmd
 
 
 
-RUN chmod -R 777 /var/www/htdocs
+
 
 EXPOSE 9000
 CMD ["php-fpm"]
