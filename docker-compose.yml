@@ -35,7 +35,7 @@ services:
   mynginx:
     image: nginx:latest
     volumes:
-      - ./ngnix/nginx.ini:/etc/nginx/conf.d/default.conf
+      - ./ngnix:/etc/nginx/conf.d/default.conf
       - ./php/project:/var/www/htdocs
     ports:
       - "8080:80"
