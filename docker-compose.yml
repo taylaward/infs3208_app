@@ -22,8 +22,8 @@ services:
     build:
       context: ./php
       dockerfile: dockerfile
-    expose:
-      - "9000"
+    #expose:
+    #  - "9000"
     volumes:
       - ./php/project:/var/www/htdocs/project
     depends_on:
