@@ -38,7 +38,7 @@ services:
       dockerfile: dockerfile
     volumes:
       - ./nginx/nginx.ini:/etc/nginx/conf.d/default.conf
-      - ./nginx/fastcgi-php.conf://etc/nginx/snippets/fastcgi-php.conf
+      - ./nginx/fastcgi-php.conf:/etc/nginx/snippets/fastcgi-php.conf
       - ./php/project:/var/www/htdocs
     ports:
       - "8080:80"
