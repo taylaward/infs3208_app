@@ -1,0 +1,17 @@
+FROM php:8.2-fpm
+
+LABEL MAINTAINER="Tayla Ward s4663633@uq.edu.au"
+
+
+RUN apt-get update \
+        && apt-get install -y \
+        && docker-php-ext-install mysqli \
+        && pecl install redis \
+        && docker-php-ext-enable redis \
+        && docker-php-ext-configure intl \
+        && docker-php-ext-install intl \
+        && apt-get update
+
+WORKDIR /var/www/htdocs
+EXPOSE 9000
+CMD ["php-fpm"]
