@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-COPY nginx.conf /etc/nginx/conf.d/
+COPY nginx.conf /etc/nginx/conf.d
 COPY fastcgi-php.conf /etc/nginx/snippets/fastcgi-php.conf
 COPY php-fpm.conf /etc/nginx/conf.d/php-fpm.conf
 COPY www.conf /etc/nginx/conf.d/www.conf
