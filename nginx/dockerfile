@@ -1,4 +1,8 @@
 FROM nginx:latest
+
+COPY nginx.ini /etc/nginx/
+COPY fastcgi-php.conf /etc/nginx/snippets/
+
 RUN apt-get update && apt-get upgrade -y \
     && apt-get install -y --fix-missing --fix-broken \
     && apt-get install -y nginx
