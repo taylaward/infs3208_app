@@ -15,8 +15,8 @@ RUN apt-get update \
         && docker-php-ext-install pdo_mysql
 
 
-WORKDIR /var/www/htdocs/project
-RUN chmod -R 777 /var/www/htdocs/project
+WORKDIR /var/www/htdocs
+RUN chmod -R 777 /var/www/htdocs
 # Install Composer
 RUN php installer -- --install-dir=/usr/local/bin --filename=composer
 
