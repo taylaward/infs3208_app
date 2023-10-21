@@ -14,5 +14,8 @@ RUN apt-get update \
         && apt-get update
 
 WORKDIR /var/www/htdocs
+
+RUN chmod -R 777 /var/www/htdocs
+
 EXPOSE 9000
 CMD ["php-fpm"]
