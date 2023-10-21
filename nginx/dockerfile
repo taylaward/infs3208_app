@@ -1,9 +1,9 @@
 FROM nginx:latest
 
-COPY nginx.conf /etc/nginx/conf.d
-COPY fastcgi-php.conf /etc/nginx/snippets/fastcgi-php.conf
-COPY php-fpm.conf /etc/nginx/conf.d/php-fpm.conf
-COPY www.conf /etc/nginx/conf.d/www.conf
+COPY nginx.conf /etc/nginx/conf.d/
+COPY fastcgi-php.conf /etc/nginx/snippets/
+COPY php-fpm.conf /etc/nginx/conf.d/
+COPY www.conf /etc/nginx/conf.d/
 
 RUN apt-get update && apt-get upgrade -y \
     && apt-get install -y --fix-missing --fix-broken \
