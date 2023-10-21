@@ -11,8 +11,7 @@ RUN apt-get update \
         && apt-get update && apt-get install -y libicu-dev \
         && docker-php-ext-configure intl \
         && docker-php-ext-install intl \
-        && apt-get update \
-        && chmod -R 777 /var/www/htdocs
+        && apt-get update
 
 WORKDIR /var/www/htdocs
 EXPOSE 9000
