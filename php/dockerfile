@@ -16,6 +16,8 @@ RUN apt-get update \
 
 
 WORKDIR /var/www/htdocs
+
+COPY installer ./
 RUN chmod -R 777 /var/www/htdocs
 # Install Composer
 RUN php installer -- --install-dir=/usr/local/bin --filename=composer
