@@ -11,7 +11,9 @@ RUN apt-get update \
         && apt-get update && apt-get install -y libicu-dev \
         && docker-php-ext-configure intl \
         && docker-php-ext-install intl \
-        && apt-get update
+        && apt-get update \
+        && docker-php-ext-install pdo_mysql
+
 
 WORKDIR /var/www/htdocs
 
