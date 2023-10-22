@@ -139,6 +139,7 @@ class HTTPException extends FrameworkException
      */
     public static function forUnableToParseURI(string $uri)
     {
+        echo memory_get_usage();
         return new static(lang('HTTP.cannotParseURI', [$uri]));
     }
 
