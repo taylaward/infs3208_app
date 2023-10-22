@@ -1,5 +1,6 @@
 {
     "require": {
-        "twilio/sdk": "^7.3"
+        "twilio/sdk": "^7.3",
+        "psr/log": "^1.1"
     }
 }
