@@ -2,9 +2,10 @@ FROM php:8.2-fpm
 
 LABEL MAINTAINER="Tayla Ward s4663633@uq.edu.au"
 
+COPY php.ini /etc/php/8.2/fpm/php.ini
 
 RUN apt-get update \
-        && apt-get install -y \
+        && apt-get install -y zip unzip git \
         && docker-php-ext-install mysqli \
         && pecl install redis \
         && docker-php-ext-enable redis \
