@@ -22,7 +22,7 @@ services:
     build:
       context: ./php
       dockerfile: dockerfile
-    command: composer update && cd project && php spark serve
+    command: /bin/sh -c "composer update && cd project && php spark serve"
     #expose:
     #  - "9000"
     volumes:
