@@ -2,6 +2,7 @@ version: "3.3"
 services:
   mysql:
     image: mariadb:latest
+    restart: always
     volumes:
       - ./sql:/docker-entrypoint-initdb.d
     environment:
