@@ -6,7 +6,7 @@ COPY php.ini /etc/php/8.2/fpm/php.ini
 
 RUN apt-get update \
         && apt-get install -y zip unzip git \
-        && docker-php-ext-install mysqli \
+        && docker-php-ext-install mysqli pdo mbstring\
         && pecl install redis \
         && docker-php-ext-enable redis \
         && apt-get update && apt-get install -y libicu-dev \
