@@ -22,7 +22,7 @@ COPY composer-setup.php ./
 COPY composer.json composer.lock ./
 RUN chmod -R 777 /var/www/htdocs
 # Install Composer
-RUN php composer-setup.php \
+RUN ls && php composer-setup.php \
         && php -r "unlink('composer-setup.php');" \
         && mv composer.phar /usr/local/bin/composer
 
@@ -30,10 +30,9 @@ RUN composer update \
         && composer install --no-scripts --no-autoloader
 RUN composer dump-autoload \
         && composer require codeigniter4/framework \
-        && composer require psr/log
+        && composer require psr/log \
+        && php spark serve
 # && composer run-script post-install-cmd --optimize 
-
-
 
 EXPOSE 9000
 CMD ["php-fpm"]
