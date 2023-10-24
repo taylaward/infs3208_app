@@ -52,7 +52,7 @@ services:
       #- ./nginx/fastcgi-php.conf:/etc/nginx/snippets/fastcgi-php.conf
        - ./php:/var/www/htdocs
     deploy:
-      replicas: 3
+      replicas: 2
     ports:
       - "8080:80"
     depends_on:
