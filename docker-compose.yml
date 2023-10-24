@@ -9,6 +9,8 @@ services:
       replicas: 3
     volumes:
       - ./sql:/docker-entrypoint-initdb.d
+    placement:
+      max_replicas_per_node: 1
     environment:
       MYSQL_ROOT_PASSWORD: d9515abe60d1b2aa58a84366
       MYSQL_DATABASE: project
@@ -36,6 +38,8 @@ services:
       - ./php:/var/www/htdocs
     deploy:
       replicas: 3
+    placement:
+      max_replicas_per_node: 1
     depends_on:
       - mysql
       - myredis
@@ -53,6 +57,8 @@ services:
        - ./php:/var/www/htdocs
     deploy:
       replicas: 3
+    placement:
+      max_replicas_per_node: 1
     ports:
       - "8080:80"
     depends_on:
